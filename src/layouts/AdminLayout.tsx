@@ -66,8 +66,8 @@ export default function AdminLayout() {
           <span className="admin-school-name">Excelz Int. School</span>
         </div>
         <nav className="admin-header-nav">
-          <a href="#home">Home</a>
-          <a href="#profile">Profile</a>
+          <NavLink to="/admin">Home</NavLink>
+          <NavLink to="/admin/account">Profile</NavLink>
           <select className="admin-header-select" aria-label="School">
             <option>Excelz International School</option>
           </select>
@@ -194,56 +194,56 @@ export default function AdminLayout() {
             </div>
 
             <span className="admin-nav-group-label">Finance</span>
-            <a href="#billing" className="admin-nav-item">
+            <NavLink to="/admin/billing" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <ReceiptIcon /> <span>Billing</span> <ChevronIcon />
-            </a>
-            <a href="#fee-collection" className="admin-nav-item">
+            </NavLink>
+            <NavLink to="/admin/fee-collection" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <CoinsIcon /> <span>Fee Collection</span> <ChevronIcon />
-            </a>
-            <a href="#payroll" className="admin-nav-item">
+            </NavLink>
+            <NavLink to="/admin/payroll" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <MoneyIcon /> <span>Payroll</span> <ChevronIcon />
-            </a>
-            <a href="#finance-entries" className="admin-nav-item">
+            </NavLink>
+            <NavLink to="/admin/finance-entries" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <LedgerIcon /> <span>Finance Entries</span> <ChevronIcon />
-            </a>
-            <a href="#financial-reports" className="admin-nav-item">
+            </NavLink>
+            <NavLink to="/admin/financial-reports" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <ChartIcon /> <span>Financial Reports</span> <ChevronIcon />
-            </a>
+            </NavLink>
 
             <span className="admin-nav-group-label">Operations</span>
-            <a href="#reports" className="admin-nav-item">
+            <NavLink to="/admin/reports" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <ChartIcon /> <span>Reports &amp; Assmnt.</span> <ChevronIcon />
-            </a>
-            <a href="#inventory" className="admin-nav-item">
+            </NavLink>
+            <NavLink to="/admin/inventory" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <TruckIcon /> <span>Inventory</span> <ChevronIcon />
-            </a>
+            </NavLink>
 
             <span className="admin-nav-group-label">Communications</span>
-            <a href="#sms-reminder" className="admin-nav-item">
+            <NavLink to="/admin/sms-reminder" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <BellIcon /> <span>SMS/Email Reminder</span> <ChevronIcon />
-            </a>
-            <a href="#news" className="admin-nav-item">
+            </NavLink>
+            <NavLink to="/admin/news" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <NewspaperIcon /> <span>News/Notices</span> <ChevronIcon />
-            </a>
+            </NavLink>
 
             <span className="admin-nav-group-label">Learning</span>
-            <a href="#tlms" className="admin-nav-item">
+            <NavLink to="/admin/tlm" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <BookIcon /> <span>TLMs</span> <ChevronIcon />
-            </a>
-            <a href="#e-learning" className="admin-nav-item">
+            </NavLink>
+            <NavLink to="/admin/e-learning" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <MonitorIcon /> <span>E-Learning</span> <ChevronIcon />
-            </a>
+            </NavLink>
 
             <span className="admin-nav-group-label">Settings</span>
-            <a href="#school-setup" className="admin-nav-item">
+            <NavLink to="/admin/school-setup" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <GearIcon /> <span>School Setup</span> <ChevronIcon />
-            </a>
-            <a href="#documents" className="admin-nav-item">
+            </NavLink>
+            <NavLink to="/admin/documents" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <DocumentIcon /> <span>My Documents</span> <ChevronIcon />
-            </a>
-            <a href="#account" className="admin-nav-item">
+            </NavLink>
+            <NavLink to="/admin/account" className={({ isActive }) => `admin-nav-item ${isActive ? 'admin-nav-item--active' : ''}`}>
               <UserIcon /> <span>My Account</span> <ChevronIcon />
-            </a>
+            </NavLink>
           </nav>
         </aside>
         <main className="admin-main">
